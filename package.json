@@ -1,0 +1,27 @@
+{
+  "name": "angular-node-test",
+  "version": "1.0.0",
+  "description": "Angular Node Test for Find and Watch Team",
+  "main": "main.js",
+  "directories": {
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattkeehan/angular-node-test.git"
+  },
+  "keywords": [
+    "angularjs",
+    "nodejs"
+  ],
+  "author": "Matt Keehan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattkeehan/angular-node-test/issues"
+  },
+  "homepage": "https://github.com/mattkeehan/angular-node-test",
+  "dependencies": {
+    "mocha": "^2.1.0"
+  }
+}
