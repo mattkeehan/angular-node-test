@@ -6,6 +6,11 @@ var bodyParser = require("body-parser");
 var expressSession = require("express-session");
 var cookieParser = require("cookie-parser");
 var loginService = require("./app/services/login");
+var mongoConnection = require("./app/util/connectMongo");
+
+mongoConnection.connect(function (err) {
+    if (err) console.log(err);
+});
 
 var app = express();
 var router = express.Router();
