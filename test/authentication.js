@@ -5,7 +5,7 @@ var auth = require("../app/libs/auth");
 
 var goodUsernames = ["user", "manager", "admin", "developer", "tester"];
 var goodPassword = "password";
-var badUsername = "fred";
+var badUsernames = ["fred", "uuser", "userr"];
 var badPassword = "Mumbojumbo";
 
 
@@ -52,13 +52,17 @@ describe("Logging in", function(){
         });
 
         it ("should reject bad users with good password", function () {
-            console.log("testing '" + badUsername + "' with '" + goodPassword + "'");
-            assert.notEqual(auth.login(badUsername, goodPassword), true);
+            badUsernames.forEach (function (badUsername) {
+                console.log("testing '" + badUsername + "' with '" + goodPassword + "'");
+                assert.notEqual(auth.login(badUsername, goodPassword), true);
+            });
         });
 
         it ("should reject bad users with bad password", function () {
-            console.log("testing '" + badUsername + "' with '" + badPassword + "'");
-            assert.notEqual(auth.login(badUsername, badPassword), true);
+            badUsernames.forEach (function (badUsername) {
+                console.log("testing '" + badUsername + "' with '" + badPassword + "'");
+                assert.notEqual(auth.login(badUsername, badPassword), true);
+            });
         });
     });
 });
