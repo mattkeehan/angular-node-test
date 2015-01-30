@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'urlencoded' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'urlencoded', null ]
+6 verbose cache add name=undefined spec="urlencoded" args=["urlencoded",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'urlencoded',
+7 verbose parsed url   path: 'urlencoded',
+7 verbose parsed url   href: 'urlencoded' }
+8 silly lockFile b4dc94eb-urlencoded urlencoded
+9 verbose lock urlencoded C:\Users\matt.keehan\AppData\Roaming\npm-cache\b4dc94eb-urlencoded.lock
+10 silly lockFile b4dc94eb-urlencoded urlencoded
+11 silly lockFile b4dc94eb-urlencoded urlencoded
+12 verbose addNamed [ 'urlencoded', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 930de895-urlencoded urlencoded@
+15 verbose lock urlencoded@ C:\Users\matt.keehan\AppData\Roaming\npm-cache\930de895-urlencoded.lock
+16 silly addNameRange { name: 'urlencoded', range: '*', hasData: false }
+17 verbose request where is /urlencoded
+18 verbose request registry http://registry.npmjs.org/
+19 verbose request id b313c14efb8fa0a9
+20 verbose url raw /urlencoded
+21 verbose url resolving [ 'http://registry.npmjs.org/', './urlencoded' ]
+22 verbose url resolved http://registry.npmjs.org/urlencoded
+23 verbose request where is http://registry.npmjs.org/urlencoded
+24 info trying registry request attempt 1 at 11:19:53
+25 http GET http://registry.npmjs.org/urlencoded
+26 http 404 http://registry.npmjs.org/urlencoded
+27 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '52',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   date: 'Fri, 30 Jan 2015 11:19:53 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-ams4122-AMS',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1422616793.342330,VS0,VE389' }
+28 silly registry.get cb [ 404,
+28 silly registry.get   { server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '52',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     date: 'Fri, 30 Jan 2015 11:19:53 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-ams4122-AMS',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1422616793.342330,VS0,VE389' } ]
+29 silly lockFile 930de895-urlencoded urlencoded@
+30 silly lockFile 930de895-urlencoded urlencoded@
+31 error 404 404 Not Found: urlencoded
+31 error 404
+31 error 404 'urlencoded' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404 It was specified as a dependency of 'angular-node-test'
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Windows_NT 6.1.7601
+33 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "urlencoded"
+34 error cwd c:\Users\matt.keehan\bsb\git-co\angular-node-test
+35 error node -v v0.10.33
+36 error npm -v 1.4.28
+37 error code E404
+38 verbose exit [ 1, true ]
