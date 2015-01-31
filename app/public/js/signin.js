@@ -1,17 +1,25 @@
 "use strict";
 
 angular.module("SignInApp", [])
-
-    .controller("SignInController", ["$scope", "$http", function($scope, $http) {
+    .controller("SignInController", function($scope, $http) {
 
         $scope.title = "Sign in";
         $scope.loggedIn = false;
 
+        $scope.getFeeds = function () {
+            $http({
+                method: "GET",
+                url: "http://localhost:3000/getFeeds"
+            }).success(function(data) {
+                $scope.feed = data;
+            });
+        };
+
         $scope.logOutSuccess = function () {
-            console.log("logged u out");
             $scope.loggedIn = false;
             $scope.authError="";
             $scope.title = "Sign in";
+            delete $scope.feed;
         };
 
         $scope.logInSuccess = function (user) {
@@ -20,6 +28,7 @@ angular.module("SignInApp", [])
             $scope.loggedIn = true;
             $scope.authError="";
             $scope.title = "Logged in";
+            $scope.getFeeds();
         };
 
         $scope.logInFailure = function () {
@@ -28,7 +37,7 @@ angular.module("SignInApp", [])
 
         $scope.logOut = function () {
             $http({
-                method: "GET",
+                method: "POST",
                 url: "http://localhost:3000/logout"
             }).success(function() {
                 $scope.logOutSuccess();
@@ -51,7 +60,6 @@ angular.module("SignInApp", [])
         };
 
         $scope.init = function () {
-            console.log("initialising page");
             $http({
                 method: "GET",
                 url: "http://localhost:3000/isAuthenticated"
@@ -60,7 +68,4 @@ angular.module("SignInApp", [])
                     $scope.logInSuccess(data.user);
             });
         };
-
-
-    }]);
-
+    });

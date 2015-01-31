@@ -38,8 +38,8 @@ function login (req, res) {
         return res.status(401).json({"login": "failure"});
     }
 
-    _logAuthAttempt(_getIp(req), "AUTH_SUCCESS", user);
     _createSession(req.session, user);
+    _logAuthAttempt(_getIp(req), "AUTH_SUCCESS", user);
     res.json({"login":"success"});
 }
 
