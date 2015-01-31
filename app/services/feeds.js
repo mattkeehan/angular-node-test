@@ -16,8 +16,6 @@ function _sendAdminFeeds (res) {
 }
 
 function getFeeds (req, res) {
-    console.log(req.session);
-
     if (! req.session.username)
         return res.status(401).json ({"error":"not authenticated"});
 
