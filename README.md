@@ -1,10 +1,14 @@
 # Sky - Find & Watch Team Test
 
-## Testing
+## Install
+
+``npm install``
+
+## Test
 
 ``mocha``
 
-## Running
+## Run
 
 ``node main``
 
@@ -16,7 +20,7 @@ Built using node 0.10.33 on Windows
 
 I've built it very minimally, to fulfil only the stated requirements. Tried to keep all business logic to the backend, so the only (mocha) unit tests are there too. Karma could otherwise be used for front end testing.
 
-I keep  my code as simple as possible until there's a reason not to, but changes I would expect to make soon if I continued would be: View over https; record auth attempts using a middleware on the login route; add some nice frontend default styling; improve the auth attempts json feed view (probably restructure on the backend so the frontend could still view it naively); add casperjs frontend end-to-end testing.
+I keep  my code as simple as possible until there's a reason not to, but changes I would expect to make soon if I continued would be: View over https; Create authorisation middleware; Add some nice frontend default styling; improve the auth attempts json feed view (probably restructure on the backend so the frontend could still view it naively); Add casperjs frontend end-to-end testing; Add proper logging.
 
 ![alt text](https://github.com/sky-guide/angular-node-test/blob/master/it-compiles.png "It Compiles!")
 
