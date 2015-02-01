@@ -1,18 +1,28 @@
-# Sky - Find & Watch Team - Welcome!
+# Sky - Find & Watch Team Test
 
-The Find & Watch team at Sky are pleased to send you this unattended test. This means we think your CV is pretty good so we want to see if your approach to work is the same as ours. 
-Our team is very Agile and TDD oriented so we believe a few lines of great code speak more than endless CV pages! 
-We’d like you to use this test to show us how awesome you are at what you do.
+## Install
 
-## Pre-Interview Developer Test
+``npm install``
 
-Please clone this repository before commencing development. Once complete please provide a link to your repository. We’d like to understand your approach as well as how great your work is, so please don’t simply commit all of your work in a single chunk.
+## Test
+
+``mocha``
+
+## Run
+
+``node main``
+
+## Environment
+
+Built using node 0.10.33 on Windows
+
+## Notes
+
+I've built it very minimally, to fulfil only the stated requirements. Tried to keep all business logic to the backend, so the only (mocha) unit tests are there too. Karma could otherwise be used for front end testing.
+
+I keep  my code as simple as possible until there's a reason not to, but changes I would expect to make soon if I continued would be: View over https; Create authorisation middleware; Add some nice frontend default styling; improve the auth attempts json feed view (probably restructure on the backend so the frontend could still view it naively); Add casperjs frontend end-to-end testing; Add proper logging.
 
 ![alt text](https://github.com/sky-guide/angular-node-test/blob/master/it-compiles.png "It Compiles!")
-
-
-Your solution will be evaluated on implementation of the below requirements, code maintainability, code clarity, and software development best practices. We would urge you to treat this like a mini-project and follow whatever Agile/TDD/BDD/etc approach you would use on any other project.
-Once reviewed, we will ask you to delete (or make private) your repository once we have reviewed your code.
 
 ## Requirements
 
@@ -29,8 +39,3 @@ Authentication attempts should be recorded (preferably in a Mongo database, alth
   *	Username
 
 Expose a JSON feed of the authentication data to authenticated admin users only.
-
-
-Good luck!
-
-Find & Watch dev team
